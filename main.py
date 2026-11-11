@@ -8,8 +8,8 @@ from fastapi.middleware.cors import CORSMiddleware
 
 # Hard-coded Bing tile URL template
 TILE_URL_TEMPLATE = (
-    "https://ecn.t{server}.tiles.virtualearth.net/"
-    "tiles/a{quadkey}.jpeg?g=13816"
+    "https://t.ssl.ak.dynamic.tiles.virtualearth.net/"
+    "comp/ch/{quadkey}?it=A"
 )
 
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:159.0) Gecko/20100101 Firefox/159.0"
