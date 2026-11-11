@@ -86,7 +86,7 @@ async def get_tile(z: int, x: int, y: int):
 
     # Calculate Bing quadkey and select tile server
     quadkey = bing_quadkey(x, y, z)
-    server = (x + y) % 4
+    server = (x + y) % 7
 
     url = TILE_URL_TEMPLATE.format(
         server=server,
